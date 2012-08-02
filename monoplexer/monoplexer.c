@@ -121,7 +121,7 @@ int main() {
 	signal(SIGCHLD, handle_sigchld);
 	switch (pid = fork()) {
 	  case 0: /* Child - Spawn shell */
-		close(0); close(1); close(2);
+		close(STDIN_FILENO); close(STDOUT_FILENO); close(STDERR_FILENO);
 		dup(fd_slave); dup(fd_slave); dup(fd_slave);
 
 		setsid(); /* Required by shell to enable job control */
