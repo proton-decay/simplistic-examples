@@ -16,3 +16,10 @@ This program demonstrates how terminal multiplexer can be implemented. Creates n
 
 Simple demo of Lua based on "Programming in Lua" tutorial. It creates module, reads global variables and tables and runs Lua functions running C functions.
 
+### evdev ###
+
+Prints events gathered chosen evdev input. May require root privileges. Based on `evtest`.
+
+## Planed ##
+
+Webcam photo shooter.

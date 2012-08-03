@@ -46,7 +46,7 @@ void *keep_reading(void *data) {
 	while ((len = read(*fd, buffer, 1)) > 0) {
 		buffer[len] = '\0'; /* read() doesn't nullbite string */
 		printf(buffer);
-		fflush(stdout); /* ??? Why this isn't flushed by default? */
+		fflush(stdout);
 	}
 	return NULL;
 }
