@@ -20,7 +20,7 @@ Simple demo of Lua based on "Programming in Lua" tutorial. It creates module, re
 
 Prints events gathered from chosen evdev input. May require root privileges. Based on `evtest`.
 
-## webcam ##
+### webcam ###
 
 Takes photo using webcam and saves it in PPM format.
 
